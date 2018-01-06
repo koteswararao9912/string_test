@@ -32,5 +32,6 @@ int main() {
 
 	printf("string copied %s\n",mystrcpy(st,"hello world !!!"));
 	
+	printf("this is hyderabad\n");	
 	return 0;
 }
