@@ -11,14 +11,26 @@ int mysize(const char *s) {
 
 	}
 
+char *mystrcpy(char *p,char *s) {
+
+	char *t = p;
+
+	while(*p++ = *s++);
+
+	return t;
+}
+
 int main() {
 
 	char *str[] = {"git repository",
 			"git hub"};
 	int i;
+	char st[30];
 
 	for(i = 0; i < 2; i++) 
 	printf("length of string is %s = %d\n",str[i],mysize(str[i]));
 
+	printf("string copied %s\n",mystrcpy(st,"hello world !!!"));
+	
 	return 0;
 }
