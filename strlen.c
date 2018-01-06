@@ -1,8 +1,8 @@
 #include<stdio.h>
 
-int mysize(char *s) {
+int mysize(const char *s) {
 	
-	char *p = s;
+	const char *p = s;
 	
 	while(*p !='\0' )
 	++p;
@@ -18,7 +18,7 @@ int main() {
 	int i;
 
 	for(i = 0; i < 2; i++) 
-	printf("length of string is %s = %d\n",str[i],mystrlen(str[i]));
+	printf("length of string is %s = %d\n",str[i],mysize(str[i]));
 
 	return 0;
 }
