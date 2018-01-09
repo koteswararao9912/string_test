@@ -57,5 +57,7 @@ int main() {
 
 	printf("good morning\n");
 
+	printf("good evening\n");
+
 	return 0;
 }
